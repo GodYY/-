@@ -1,4 +1,4 @@
-EXE = straight_insertion_sort binary_insertion_sort bubble_sort quick_sort select_sort
+EXE = straight_insertion_sort binary_insertion_sort bubble_sort quick_sort select_sort heap_sort
 
 straight_insertion_sort:
 	gcc straight_insertion_sort.c \
@@ -19,6 +19,10 @@ quick_sort:
 select_sort:
 	gcc select_sort.c \
 	-o select_sort
+
+heap_sort:
+	gcc heap_sort.c \
+	-o heap_sort
 
 clean:
 	rm -rf ${EXE}
